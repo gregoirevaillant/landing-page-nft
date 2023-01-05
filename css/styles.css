@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+}
+
+/* BACKGROUND PAGE ########################################################################################### */
+.top_page {
+  background: linear-gradient(to bottom right, #b9b8b8, #fff);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* NAVIGATION ##############################################################################################*/
+
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  font-family: "Source Sans Pro";
+}
+
+.header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 125%;
+  font-weight: 300;
+  padding: 2%;
+}
+
+.link {
+  display: inline-block;
+  padding: 1% 0;
+  margin: 1% 2%;
+  position: relative;
+  text-decoration: none;
+  color: #0f0f0f;
+  font-weight: 300;
+  font-size: 115%;
+  font-family: "Source Sans Pro";
+}
+.link .bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 3px solid black;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  transition: all 300ms;
+}
+.link:hover .bar {
+  opacity: 1;
+  bottom: 10%;
+}
+/* CENTRE ######################################################################################################## */
+
+.landing_page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.titre_landing_page {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 550%;
+  width: 50%;
+  text-align: left;
+  margin-top: 15%;
+  line-height: 99%;
+}
+
+.text_landing_page {
+  font-family: "Source Sans pro", sans-serif;
+  text-align: left;
+  width: 50%;
+  margin-top: 1%;
+}
+
+/* FOOTER ############################################################################################################### */
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 8%;
+}
+.card {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.144);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.205),
+    inset 0 20px 20px rgba(253, 253, 253, 0.205);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.336);
+  position: relative;
+  transition: box-shadow 0.4s, color 0.8s, transform 0.4s;
+}
+.card:hover {
+  color: #ffffff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205),
+    inset 0 20px 10px rgba(255, 255, 255, 0.287),
+    inset 10px 0 20px rgb(68, 68, 68), inset -20px 0 20px rgb(165, 165, 165),
+    inset -30px 0 20px rgb(99, 99, 99);
+  transform: translateY(-10px);
+}
